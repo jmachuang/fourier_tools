@@ -1,5 +1,5 @@
 % this example finds the antiderivative of a known function
-%           compares the Fourier method and the Trapezoidal rule
+%          and compares the Fourier method and the Trapezoidal rule
 % JM Huang, 03/29/2024
 
 clear all
@@ -15,7 +15,7 @@ for k = 1:length(N)
     % define coordinates
     [x, ~] = fourierGrid(N(k));
 
-    % define u and its exact derivative
+    % define u and its exact antiderivative
     u = cos(x).*exp(sin(x));
     U = exp(sin(x))-1;
     

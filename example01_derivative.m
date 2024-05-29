@@ -1,5 +1,5 @@
 % this example takes the derivative of a known function
-%           compares the Fourier method and 2nd order finite differences
+%         and compares the Fourier method and 2nd order finite differences
 % JM Huang, 03/29/2024
 
 clear all
