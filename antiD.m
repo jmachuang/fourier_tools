@@ -20,6 +20,6 @@ U_hat = fft(u)./(1j*k);
 U_hat(1) = 0; U_hat(N/2+1) = 0;
 
 % inverse Fourier to get U
-U = ifft(U_hat); U = U - U(end) + fourierInt_full(u);
+U = real(ifft(U_hat)); U = U - U(end) + fourierInt_full(u);
 
 end

@@ -22,6 +22,6 @@ gv = exp(-0.5*abs(k).^2*sigma^2);
 % do fft, and apply the filter
 u_hat = fft(u); fu_hat = gv.*u_hat;
 
-fu = ifft(fu_hat);
+fu = real(ifft(fu_hat));
 end
 

@@ -17,6 +17,6 @@ k = [0:N/2-1 0 -(N/2-1):-1]';
 u_hat = fft(u); du_hat = 1j*k.*u_hat; 
 
 % inverse Fourier
-du = ifft(du_hat);
+du = real(ifft(du_hat));
 
 end
