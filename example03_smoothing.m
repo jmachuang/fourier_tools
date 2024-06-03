@@ -12,7 +12,7 @@ u = exp(sin(x))+rand(N,1);
 plot(x/2/pi, u, 'k'); hold on
 
 % make a list of Gaussian std
-sigma = 2.^(-5:-2); Ns = length(sigma);
+sigma = 2.^(5:-1:2); Ns = length(sigma);
 
 % some colors
 cc = jet(Ns);

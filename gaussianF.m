@@ -17,7 +17,7 @@ N = length(u);
 k = [0:N/2-1 0 -(N/2-1):-1]';
 
 % filter in the spectrum
-gv = exp(-0.5*abs(k).^2*sigma^2);
+gv = exp(-0.5*abs(k).^2/sigma^2);
 
 % do fft, and apply the filter
 u_hat = fft(u); fu_hat = gv.*u_hat;
